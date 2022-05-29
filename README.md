@@ -42,8 +42,7 @@ localhost:3000
 - If the user is new, the app would direct the user to the registration page .
 - Then the user logins through loginpage.If the user credentials matches with stored value in the database, then it will direct the user to movies page, else the user will be directed to error page.
 - Once the movies page opens,user have to choose movies according to their choice.
-- Once the choices are submitted then the recommendation engine gets triggered and top 5 recommended movies will be displayed
-- 
+- Once the choices are submitted then the recommendation engine gets triggered and top 5 recommended movies will be displayed. 
 ## Website Demo
  - ["Youtube Link"](https://youtu.be/9eZ74_I0sIE)
 

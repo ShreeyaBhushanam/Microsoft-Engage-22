@@ -1,0 +1,99 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation system</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+    <body>
+        <h1>MYFLIX</h1>
+        <h2>TOP 5 recommended movies for you</h2>
+        <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+        <div class="movie-list">
+            <p class="top">1</p> 
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+                <p class="title" id="t0"></p>
+                <p class="genre" id="g0"></p>
+                <p class="language" id="l0"></p>
+                <p class="rating" id="r0"></p>
+                <p class="year" id="y0"></p>
+                <p class="duration" id="d0"></p>
+                <button class="watch"> Play </button>
+            </div></div>
+            <p class="top">2</p>
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+                <p class="title" id="t1"></p>
+                <p class="genre" id="g1"></p>
+                <p class="language" id="l1"></p> 
+                <p class="rating" id="r1"></p> 
+                <p class="year" id="y1"></p>
+                <p class="duration" id="d1"></p>
+                <button class="watch">Play</button>
+            </div></div>
+            <p class="top">3</p>
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+                <p class="title" id="t2"></p>
+                <p class="genre" id="g2"></p>
+                <p class="language" id="l2"></p> 
+                <p class="rating" id="r2"></p>
+                <p class="year" id="y2"></p>
+                <p class="duration" id="d2"></p>
+                <button class="watch">Play</button>
+            </div></div>
+        </div></div></div>
+
+        <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+        <div class="movie-list">
+            <p class="top">4</p>
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+                <p class="title" id="t3"></p>
+                <p class="genre" id="g3"></p>
+                <p class="language" id="l3"></p> 
+                <p class="rating" id="r3"></p> 
+                <p class="year" id="y3"></p>
+                <p class="duration" id="d3"></p>
+                <button class="watch">Play</button>
+            </div></div>
+            <p class="top">5</p>
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+                <p class="title" id="t4"></p>
+                <p class="genre" id="g4"></p>
+                <p class="language" id="l4"></p> 
+                <p class="rating" id="r4"></p> 
+                <p class="year" id="y4"></p>
+                <p class="duration" id="d4"></p>
+                <button class="watch">Play</button>
+            </div></div>
+            
+        </div>
+        </div>
+        </div>
+        <script>
+            const propertyValues = Object.values({{{name}}});
+            for( let i=0 ; i<5 ; i++)
+            {
+                if (i<propertyValues.length)
+                {
+                    document.getElementById("t"+i.toString()).innerHTML = propertyValues[i*6];
+                    document.getElementById("y"+i.toString()).innerHTML = "Year :"+propertyValues[6*i+1];
+                    duration=parseFloat(propertyValues[6*i+2])
+                    document.getElementById("d"+i.toString()).innerHTML = "Duration :"+Math.floor(duration)+"hr "+parseInt((duration- Math.floor(duration))*60)+"mins";
+                    document.getElementById("g"+i.toString()).innerHTML = "Genre : "+propertyValues[6*i+3];
+                    document.getElementById("l"+i.toString()).innerHTML = "Language : "+propertyValues[6*i+4]; 
+                    document.getElementById("r"+i.toString()).innerHTML = "Rating : "+propertyValues[6*i+5];
+                }                
+                else
+                    document.getElementById("s"+i.toString()).innerHTML ="Watched all other movies :)";
+            }
+        </script>
+    </body>
+</html>

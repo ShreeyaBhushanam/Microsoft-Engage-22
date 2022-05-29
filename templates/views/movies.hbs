@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation system</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>MYFLIX</h1>
+    <h2>CHOOSE MOVIES YOU LIKE</h2>
+        <form action='/submit' method="POST">
+        <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+        <h3><b>ENGLISH MOVIES</b></h3>
+        <div class="movie-list"> 
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies1" value="1"><b>Hangover</b>
+            <p class="details">Genre : ['comedy']<br>Language : English<br>Rating : 7.7<br>Year :2009<br>Duration :1hr 40mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies2" value="2"><b>Free guy</b>
+            <p class="details">Genre : ['comedy', 'action']<br>Language : English<br>Rating : 7.1<br>Year :2021<br>Duration :1hr 55mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies6" value="6"><b>The Conjuring</b>
+            <p class="details">Genre : ['horror']<br>Language : English<br>Rating : 7.5<br>Year :2013<br>Duration :1hr 52mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies7" value="7"><b>The Conjuring 2</b>
+            <p class="details">Genre : ['horror']<br>Language : English<br>Rating : 7.3<br>Year :2016<br>Duration :2hr 13mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies8" value="8"><b>Doctor Strange in the Multiverse of Madness</b>
+            <p class="details">Genre : ['action']<br>Language : English<br>Rating : 7.3<br>Year :2022<br>Duration :2hr 6mins</p>
+            </div></div>
+
+            
+        </div></div></div>
+
+        <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+        <div class="movie-list"> 
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies9" value="9"><b>Army of the Dead</b>
+            <p class="details">Genre : ['horror', 'action']<br>Language : English<br>Rating : 5.7<br>Year :2021<br>Duration :2hr 28mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies10" value="10"><b>Zombieland</b>
+            <p class="details">Genre : ['horror', 'comedy', 'action']<br>Language : English<br>Rating : 7.6<br>Year :2009<br>Duration :1hr 28mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies11" value="11"><b>Trick 'r Treat</b>
+            <p class="details">Genre : ['horror', 'comedy']<br>Language : English<br>Rating : 6.7<br>Year :2000<br>Duration :1hr 22mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies12" value="12"><b>Ghostbusters</b>
+            <p class="details">Genre : ['comedy', 'action']<br>Language : English<br>Rating : 7.8<br>Year :1984<br>Duration :1hr 45mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies13" value="13"><b>Johnny English</b>
+            <p class="details">Genre : ['comedy']<br>Language : English<br>Rating : 6.2<br>Year :2003<br>Duration :1hr 45mins</p>
+            </div></div>
+        </div></div></div> 
+
+        <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+        <h3><b>HINDI MOVIES</b></h3>
+        <div class="movie-list"> 
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies3" value="3"><b>KGF</b>
+            <p class="details">Genre : ['action']<br>Language : Hindi<br>Rating : 8.2<br>Year :2018<br>Duration :2hr 34mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies4" value="4" ><b>Golmaal</b>
+            <p class="details">Genre : ['comedy', 'action']<br>Language : Hindi<br>Rating : 7.4<br>Year :2006<br>Duration :2hr 10mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies5" value="5"><b>Stree</b>
+            <p class="details">Genre : ['horror', 'comedy', 'action']<br>Language : Hindi<br>Rating : 7.5<br>Year :2018<br>Duration :2hr 8mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies14" value="14"><b>1920 London</b>
+            <p class="details">Genre : ['horror']<br>Language : Hindi<br>Rating : 5<br>Year :2016<br>Duration :2hr 0mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies15" value="15"><b>Hera Pheri</b>
+            <p class="details">Genre : ['comedy']<br>Language : Hindi<br>Rating : 8.1<br>Year :2000<br>Duration :2hr 36mins</p>
+            </div></div>
+       </div></div></div> 
+       <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+        <div class="movie-list"> 
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies16" value="16"><b>Go Goa Gone</b>
+            <p class="details">Genre : ['horror', 'comedy']<br>Language : Hindi<br>Rating : 6.6<br>Year :2013<br>Duration :1hr 51mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies17" value="17"><b>Bhoot : The Haunted Ship</b>
+            <p class="details">Genre : ['horror', 'action']<br>Language : Hindi<br>Rating : 5.4<br>Year :2020<br>Duration :2hr 23mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies18" value="18"><b>Raazi</b>
+            <p class="details">Genre : ['action']<br>Language : Hindi<br>Rating : 7.7<br>Year :2018<br>Duration :2hr 19mins</p>
+            </div></div>
+        </div></div></div>
+
+        <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+        <h3><b>TELUGU MOVIES</b></h3>
+        <div class="movie-list">
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies0" value="0"><b>Bhagamathi</b>
+            <p class="details">Genre : ['horror', 'action']<br>Language : Telugu<br>Rating : 7<br>Year :2018<br>Duration :2hr 17mins</p>
+            </div></div>
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies19" value="19"><b>Baahubali: The Beginning</b>
+            <p class="details">Genre : ['action']<br>Language : Telugu<br>Rating : 8<br>Year :2015<br>Duration :2hr 37mins</p>
+            </div></div>
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies20" value="20"><b>Baahubali 2: The Conclusion</b>
+            <p class="details">Genre : ['action']<br>Language : Telugu<br>Rating : 8.2<br>Year :2017<br>Duration :2hr 46mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies21" value="21"><b>Prema Katha Chitram</b>
+            <p class="details">Genre : ['horror', 'comedy']<br>Language : Telugu<br>Rating : 7.1<br>Year :2013<br>Duration :2hr 10mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies22" value="22"><b>Jathi Ratnalu</b>
+            <p class="details">Genre : ['comedy']<br>Language : Telugu<br>Rating : 7.3<br>Year :2021<br>Duration :2hr 28mins</p>
+            </div></div>
+        </div></div></div>
+
+
+        <div class="movie-list-container">
+        <div class="movie-list-wrapper">
+        <div class="movie-list">
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies23" value="23"><b>Agent Sai Srinivasa Athreya</b>
+            <p class="details">Genre : ['comedy']<br>Language : Telugu<br>Rating : 8.4<br>Year :2019<br>Duration :2hr 28mins</p>
+            </div></div>
+
+            <div class="movie-list-item">
+            <div class="movie-list-item-tile">
+            <input type="checkbox" id="movie" name="movies24" value="24"><b>RRR</b>
+            <p class="details">Genre : ['action']<br>Language : Telugu<br>Rating : 8.3<br>Year :2022<br>Duration :3hr 7mins</p>
+            </div></div>
+        </div></div></div>
+        <center><input type="submit" name="log" id="log1" value="Submit"></center>
+        </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation system</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <h1>MYFLIX</h1>
+    <a href="/"><b>Home</b></a>
+    <a href="/register"><b>Register</b></a>
+    <a href="/login"><b>Login</b></a>
+    <h2>Registration Form</h2><br>    
+    <div class="login">    
+    <form id="login" method="POST" action="/register">    
+        <label><b>User Name</b></label> <br>  
+        <input type="text" name="username" id="username" placeholder="Username">    
+        <br><br>    
+        <label><b>Email</b></label><br>  
+        <input type="text" name="email" id="email" placeholder="Email">    
+        <br><br>  
+        <label><b>Password</b></label>    
+        <input type="Password" name="password" id="password" placeholder="Password">    
+        <br><br>    
+        <label><b> Confirm Password</b></label>    
+        <input type="Password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">    
+        <br><br>  
+        <input type="submit" name="log" id="log" value="Register Here">       
+        <br><br>       
+    </form>     
+    </div>
+</body>
+</html>

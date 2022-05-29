@@ -43,6 +43,10 @@ localhost:3000
 - Then the user logins through loginpage.If the user credentials matches with stored value in the database, then it will direct the user to movies page, else the user will be directed to error page.
 - Once the movies page opens,user have to choose movies according to their choice.
 - Once the choices are submitted then the recommendation engine gets triggered and top 5 recommended movies will be displayed. 
+## Database hosting
+- Database is hosted on free public cluster in mongodb atlas.The url is already embedded in the code.
+- In case of any problem, the username is shreeya and password is engage1
+- When I used database on localhost it took 1-2secs to run but when the database is hosted in free tier cluster it is taking 9-10 secs to establish a connection between python and mongodb using pymongo client
 ## Website Demo
  - ["Youtube Link"](https://youtu.be/9eZ74_I0sIE)
 

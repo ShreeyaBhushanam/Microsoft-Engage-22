@@ -20,7 +20,7 @@ This recommendation system is primarily based on content based filtering.This mo
  ```
  pip install -r requirements.txt
  ```
- -Install the following dependencies
+ - Install the following dependencies
  ```
  npm i express
  npm i mongoose

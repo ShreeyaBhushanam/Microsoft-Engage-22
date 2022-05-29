@@ -29,6 +29,9 @@ This recommendation system is primarily based on content based filtering.This mo
  ```
 ## How to run the program
 - Open the project and run the app.js file.
+```
+node app.js
+```
 - Then console will display 
 ```
 Server is running at port no 3000

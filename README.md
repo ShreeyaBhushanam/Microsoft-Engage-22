@@ -27,11 +27,25 @@ This recommendation system is primarily based on content based filtering.This mo
  npm i hbs
  npm i python-shell
  ```
- 
-
-
+## How to run the program
+- Open the project and run the app.js file.
+- Then console will display 
+```
+Server is running at port no 3000
+Connected to mongoDB
+```
+- On web browser and type
+```
+localhost:3000
+```
+- Then Myflix page will be opened with register and login options
+- If the user is new, the app would direct the user to the registration page .
+- Then the user logins through loginpage.If the user credentials matches with stored value in the database, then it will direct the user to movies page, else the user will be directed to error page.
+- Once the movies page opens,user have to choose movies according to their choice.
+- Once the choices are submitted then the recommendation engine gets triggered and top 5 recommended movies will be displayed
+- 
 ## Website Demo
  - ["Youtube Link"](https://youtu.be/9eZ74_I0sIE)
-as
+
 
 
